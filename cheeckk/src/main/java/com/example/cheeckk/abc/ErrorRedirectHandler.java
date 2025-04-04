@@ -36,7 +36,7 @@ public class ErrorRedirectHandler {
                       + "window.top.location='/security/ValidateSSOPage.jsp?"+errorKey+"=true&needRedirect=true&traceId=%s&redirectToLoginUrl=%s';"
                       + "</script>",
               Encode.forJavaScript(AVLogUtil.getTraceId()),
-              Encode.forJavaScript(encodedReturnUrl)
+             encodedReturnUrl
       ));
   }
 }
